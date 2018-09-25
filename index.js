@@ -23,12 +23,12 @@ export default class AutoTags extends Component {
       : { marginTop: 5 };
 
     return (
-      <View style={this.props.tagStyles || styles.tags}>
+      <View style={this.props.tagsStyles || styles.tags}>
         {this.props.tagsSelected.map((t, i) => {
           return (
             <TouchableOpacity
               key={i}
-              style={[styles.tag]}
+              style={this.props.tagStyles || styles.tag}
               onPress={() => this.props.handleDelete(i)}
             >
               <Text>{t.name}</Text>
