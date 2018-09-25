@@ -136,7 +136,6 @@ export default class AutoTags extends Component {
           }
           containerStyle={this.props.containerStyle || styles.containerStyle}
           underlineColorAndroid="transparent"
-          style={{ backgroundColor: "#efeaea" }}
           listContainerStyle={{
             backgroundColor: this.props.tagsOrientedBelow
               ? "#efeaea"
