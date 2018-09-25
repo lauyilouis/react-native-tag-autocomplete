@@ -31,7 +31,7 @@ export default class AutoTags extends Component {
               style={this.props.tagStyles || styles.tag}
               onPress={() => this.props.handleDelete(i)}
             >
-              <Text>{t.name}</Text>
+              <Text style={this.props.tagTextStyles || styles.tagTextStyles}>{t.name}</Text>
             </TouchableOpacity>
           );
         })}
@@ -171,6 +171,9 @@ const styles = StyleSheet.create({
     height: 30,
     borderRadius: 30,
     padding: 8
+  },
+  tagTextStyles: {
+    color: '#000000',
   },
   inputContainerStyle: {
     borderRadius: 0,
