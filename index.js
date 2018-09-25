@@ -28,7 +28,7 @@ export default class AutoTags extends Component {
           return (
             <TouchableHighlight
               key={i}
-              style={[tagMargins, styles.tag]}
+              style={[styles.tag]}
               onPress={() => this.props.handleDelete(i)}
             >
               <Text>{t.name}</Text>
@@ -169,7 +169,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     height: 30,
-    marginLeft: 5,
     borderRadius: 30,
     padding: 8
   },
