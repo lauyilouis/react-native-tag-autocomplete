@@ -120,7 +120,7 @@ export default class AutoTags extends Component {
           value={query}
           onChangeText={text => this.handleInput(text)}
           onSubmitEditing={this.onSubmitEditing}
-          multiline={true}
+          multiline={this.props.multiline || true}
           autoFocus={this.props.autoFocus === false ? false : true}
           renderItem={suggestion => (
             <TouchableOpacity onPress={e => this.addTag(suggestion)}>
